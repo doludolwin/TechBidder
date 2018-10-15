@@ -1,0 +1,336 @@
+
+
+body {
+    margin: 0px;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.4);
+-moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.4);
+box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.4);
+}
+
+nav #nav-wrapper {
+    width: 92%;
+    margin: 0px auto;
+}
+
+nav #nav-wrapper .branding {
+    height: 80px;
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.branding h2 {
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+    color: rgb(44, 44, 44);
+
+}
+
+.branding h2 span {
+    background:#f9d423;
+}
+
+
+nav #nav-wrapper .login {
+    float: right;
+    width: 600px;
+    height: 80px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+nav #nav-wrapper .adminlogin {
+	float: right;
+	width: 1000px;
+	height: 80px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+nav #nav-wrapper .login .input-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    margin-top: 10px;
+}
+
+	nav #nav-wrapper .login .input-wrapper a {
+		font-size: .9em;
+		color: rgb(44, 44, 44);
+		background-color: #f9d423;
+		border-radius: 10%;
+	}
+
+/* #signin {
+    border-color: #dbdbdb;
+    color: #363636;
+    box-shadow: inset 0 1px 2px rgba(10,10,10,.1);
+    max-width: 100%;
+    width: 100%;
+    height: 35px;
+} */
+
+
+nav #nav-wrapper .login .input-wrapper input[type="text"],input[type="password"] {
+    border-radius: 10px;    
+    padding-left: 10px;
+}
+
+nav #nav-wrapper .login .input-wrapper input[type="submit"] {
+    background: #f9d423;
+    color: rgb(44, 44, 44);
+    font-family: 'Lobster', cursive;
+    display: inline-block;
+    border-radius: 10px;   
+    width: 80px; 
+}
+
+nav #nav-wrapper .login .input-wrapper input[type="submit"]:hover {
+    background: rgb(44, 44, 44);
+    color: white;
+}
+
+
+/* Header styles */
+header {
+    height: 700px;
+    width: 100%;
+    background: url(./home-header.jpg);
+    background-size: 100%;
+    background-position: bottom;
+    padding: 70px 9%;
+    box-sizing: border-box;
+}
+.adminheader {
+	height: 700px;
+	width: 100%;
+	background: url(./addproducts.jpg);
+	background-size: 100%;
+	background-position: bottom;
+	padding: 70px 9%;
+	box-sizing: border-box;
+}
+header #signup-wrapper {
+    height: 530px;
+    width: 650px;
+    background-color: rgba(255, 255, 255, 0.92);
+    /* margin: 0px auto; */
+    float: right;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+}
+
+	/*dolwin*/
+header #history-wrapper {
+		height: 600px;
+		width: 1000px;
+		background-color: rgba(255, 255, 255, 0.92);
+		margin: 0px 70px 0px 0px; 
+		float: right;
+		border-radius: 8px;
+		padding: 30px;
+		text-align: center;
+		overflow:scroll;
+}
+
+/*completed*/
+#signup-wrapper h2 {
+	text-transform: uppercase;
+	font-size: 2em;
+	font-weight: 800;
+	margin-bottom: 0px;
+}
+
+#signup-wrapper p {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+
+
+header #signup-wrapper input[type="text"],input[type="email"],#password-fuck {
+    width: 46%;
+    margin: 15px 10px;
+    height: 45px;
+    border-radius: 8px;
+    background: transparent;
+}
+
+header #signup-wrapper input[type="submit"] {
+    width: 40%;
+    margin: 35px 10px;
+    height: 45px;
+    border-radius: 8px;
+    background: #f9d423;
+    color: rgb(44, 44, 44);
+    font-family: 'Lobster', cursive;
+    font-size: 1.2em;
+}
+
+
+header #signup-wrapper input[type="submit"]:hover {
+    background: rgb(44, 44, 44);
+    color: white;    
+}
+
+/* Live auction styles */
+.live-auction {
+    width: 100%;
+    height: 800px;
+    background: rgb(253, 253, 253);
+    padding: 100px 9%;
+}
+
+.live-auction #live-auction__header {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    color: rgb(44, 44, 44);
+    font-family: 'Lobster', cursive;
+}
+
+.live-auction .cards {
+
+    margin: 30px 0px;
+}
+
+.cards .mycard {
+	background: #fff;
+	border: 0;
+	display: inline-block;
+	height: 600px;
+	width: 29%;
+	margin: 10px 1.5%;
+	border-radius: 3px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	float:left;
+}
+
+.cards .mycard .image-wrapper {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.cards .mycard .image-wrapper img {
+    height: 100%;
+}
+
+
+/* Style The Dropdown Button */
+.dropbtn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	width: 200px;
+	
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	position: absolute;
+	display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	/*background-color: #f9f9f9;*/
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	/*background-color: #f9d423;
+	/*color: rgb(44, 44, 44);*/
+	font-family: 'Lobster', cursive;
+	font-size: 1.2em;
+}
+
+/* Links inside the dropdown */
+	.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		border-radius: 5%;
+		overflow: hidden;
+		background-color: #f9d423;
+		color: rgb(44, 44, 44);
+	}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+
+			background-color: #3e8e41;
+		}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+
+	background-color: #3e8e41;
+
+}
+
+div.upcoming{
+	clear:both;
+}
+#bid_history {
+
+	width: 100%;
+	text-align: center;
+	font-size: 2.5em;
+	color: rgb(44, 44, 44);
+	font-family: 'Lobster', cursive;
+
+}
+
+.anim{
+
+	margin-left:10px;
+	margin-top:7px;
+
+}
+
+.anim:hover {
+	animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
+}
+
+@keyframes shake {
+	10%, 90% {
+		transform: translate3d(-1px, 0, 0);
+	}
+
+	20%, 80% {
+		transform: translate3d(2px, 0, 0);
+	}
+
+	30%, 50%, 70% {
+		transform: translate3d(-4px, 0, 0);
+	}
+
+	40%, 60% {
+		transform: translate3d(4px, 0, 0);
+	}
+}

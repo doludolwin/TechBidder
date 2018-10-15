@@ -134,7 +134,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="Contact.aspx" />
+    <Content Include="addproducts.aspx" />
+    <Content Include="adminbid.aspx" />
+    <Content Include="adminbuyer.aspx" />
+    <Content Include="adminindex.aspx" />
+    <Content Include="adminpayment.aspx" />
+    <Content Include="adminproduct.aspx" />
+    <Content Include="adminseller.aspx" />
+    <Content Include="App_Data\TechBid.mdf" />
+    <Content Include="App_Data\TechBid_log.ldf">
+      <DependentUpon>TechBid.mdf</DependentUpon>
+    </Content>
+    <Content Include="bidhistory.aspx" />
+    <Content Include="bidnow.aspx" />
+    <Content Include="cancelorder.aspx" />
+    <Content Include="logout.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -155,7 +169,29 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="orderhistory.aspx" />
+    <Content Include="payment.aspx" />
+    <Content Include="paymenthistory.aspx" />
+    <Content Include="rebidproducts.aspx" />
+    <Content Include="removeproduct.aspx" />
+    <Content Include="resources\index.js" />
+    <Content Include="resources\style.scss" />
+    <Content Include="sellerbid.aspx" />
+    <Content Include="sellercart.aspx" />
+    <Content Include="sellerorder.aspx" />
+    <Content Include="sellerpayment.aspx" />
+    <Content Include="sellerproduct.aspx" />
+    <Content Include="updateproduct.aspx" />
+    <Content Include="winhistory.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="index.aspx" />
+    <Content Include="loginindex.aspx" />
+    <Content Include="resources\addproducts.jpg" />
+    <Content Include="resources\home-header.jpg" />
+    <Content Include="resources\paymentstyle.css" />
+    <Content Include="resources\sen.jpg" />
+    <Content Include="resources\site.js" />
+    <Content Include="resources\style.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -184,6 +220,8 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="seller.aspx" />
+    <Content Include="sellerindex.aspx" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -191,6 +229,55 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addproducts.aspx.cs">
+      <DependentUpon>addproducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addproducts.aspx.designer.cs">
+      <DependentUpon>addproducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminbid.aspx.cs">
+      <DependentUpon>adminbid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminbid.aspx.designer.cs">
+      <DependentUpon>adminbid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminbuyer.aspx.cs">
+      <DependentUpon>adminbuyer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminbuyer.aspx.designer.cs">
+      <DependentUpon>adminbuyer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminindex.aspx.cs">
+      <DependentUpon>adminindex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminindex.aspx.designer.cs">
+      <DependentUpon>adminindex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminpayment.aspx.cs">
+      <DependentUpon>adminpayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminpayment.aspx.designer.cs">
+      <DependentUpon>adminpayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminproduct.aspx.cs">
+      <DependentUpon>adminproduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminproduct.aspx.designer.cs">
+      <DependentUpon>adminproduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminseller.aspx.cs">
+      <DependentUpon>adminseller.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminseller.aspx.designer.cs">
+      <DependentUpon>adminseller.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -200,12 +287,33 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="bidhistory.aspx.cs">
+      <DependentUpon>bidhistory.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
+    <Compile Include="bidhistory.aspx.designer.cs">
+      <DependentUpon>bidhistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bidnow.aspx.cs">
+      <DependentUpon>bidnow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bidnow.aspx.designer.cs">
+      <DependentUpon>bidnow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cancelorder.aspx.cs">
+      <DependentUpon>cancelorder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cancelorder.aspx.designer.cs">
+      <DependentUpon>cancelorder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logout.aspx.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logout.aspx.designer.cs">
+      <DependentUpon>logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -217,7 +325,106 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginindex.aspx.cs">
+      <DependentUpon>loginindex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginindex.aspx.designer.cs">
+      <DependentUpon>loginindex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="orderhistory.aspx.cs">
+      <DependentUpon>orderhistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="orderhistory.aspx.designer.cs">
+      <DependentUpon>orderhistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="payment.aspx.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="payment.aspx.designer.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="paymenthistory.aspx.cs">
+      <DependentUpon>paymenthistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paymenthistory.aspx.designer.cs">
+      <DependentUpon>paymenthistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductDetails.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rebidproducts.aspx.cs">
+      <DependentUpon>rebidproducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rebidproducts.aspx.designer.cs">
+      <DependentUpon>rebidproducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="removeproduct.aspx.cs">
+      <DependentUpon>removeproduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="removeproduct.aspx.designer.cs">
+      <DependentUpon>removeproduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="seller.aspx.cs">
+      <DependentUpon>seller.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="seller.aspx.designer.cs">
+      <DependentUpon>seller.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sellerbid.aspx.cs">
+      <DependentUpon>sellerbid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sellerbid.aspx.designer.cs">
+      <DependentUpon>sellerbid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sellercart.aspx.cs">
+      <DependentUpon>sellercart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sellercart.aspx.designer.cs">
+      <DependentUpon>sellercart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sellerindex.aspx.cs">
+      <DependentUpon>sellerindex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sellerindex.aspx.designer.cs">
+      <DependentUpon>sellerindex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sellerorder.aspx.cs">
+      <DependentUpon>sellerorder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sellerorder.aspx.designer.cs">
+      <DependentUpon>sellerorder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sellerpayment.aspx.cs">
+      <DependentUpon>sellerpayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sellerpayment.aspx.designer.cs">
+      <DependentUpon>sellerpayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sellerproduct.aspx.cs">
+      <DependentUpon>sellerproduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sellerproduct.aspx.designer.cs">
+      <DependentUpon>sellerproduct.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -227,19 +434,35 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="updateproduct.aspx.cs">
+      <DependentUpon>updateproduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updateproduct.aspx.designer.cs">
+      <DependentUpon>updateproduct.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="winhistory.aspx.cs">
+      <DependentUpon>winhistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="winhistory.aspx.designer.cs">
+      <DependentUpon>winhistory.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Folder Include="Uploads\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
